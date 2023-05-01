@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5sp">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="394dp"
+        android:background="#D7BBBB"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1">
+
+        <ImageView
+            android:id="@+id/pimage"
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/pname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:paddingStart="15sp"
+            android:text="NAME"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/pdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:paddingStart="10sp"
+            android:text="product descition dfsdukfhsdfhsdfsdfsdhfsfsdhfusdfsdfsdfhsdfds" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:paddingStart="15sp"
+            android:text="price"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="Seller Details"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/snumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="seller phone number =343535234234" />
+
+        <TextView
+            android:id="@+id/sdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="seller details include address" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
