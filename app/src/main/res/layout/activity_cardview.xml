@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5sp">
+    tools:context=".cardview"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="410dp"
-        android:layout_height="394dp"
-        android:background="#D7BBBB"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1">
+<!--    <LinearLayout-->
+<!--        android:layout_width="410dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#D7BBBB"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.264">-->
 
         <ImageView
             android:id="@+id/pimage"
@@ -73,44 +74,45 @@
             android:layout_height="wrap_content"
             android:text="seller details include address" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="200sp"
-            android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200sp"
+        android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="20dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_baseline_arrow_left_24" />
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_arrow_left_24" />
 
-            <EditText
-                android:id="@+id/editTextNumberSigned"
-                android:layout_width="25dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="0"
-                android:inputType="numberSigned"
-                android:paddingStart="20sp" />
+        <EditText
+            android:id="@+id/editTextNumberSigned"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="numberSigned"
+            android:paddingStart="20sp" />
 
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="20dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_baseline_arrow_right_24" />
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_arrow_right_24" />
 
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="30dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="10sp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24" />
-        </LinearLayout>
-
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24" />
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>
