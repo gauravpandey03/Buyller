@@ -7,156 +7,160 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="416dp"
-        android:layout_height="731dp"
+        android:id="@+id/backimg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:foregroundGravity="fill_horizontal|fill_vertical|fill"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/back" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="147dp"
-        android:layout_height="158dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="168dp"
+        android:id="@+id/extdes1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
         android:clickable="true"
         android:onClick="buy"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/extdes2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/buttonbackground" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="147dp"
-        android:layout_height="158dp"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="40dp"
+        android:id="@+id/extdes2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
 
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="100dp"
         android:clickable="true"
         android:onClick="sell"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/extdes1"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/buttonbackground" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="55dp"
-        android:layout_height="51dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        android:id="@+id/selldes"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/extdes2"
+        app:layout_constraintEnd_toEndOf="@+id/extdes2"
+        app:layout_constraintStart_toStartOf="@+id/extdes2"
+        app:layout_constraintTop_toTopOf="@+id/extdes2"
         app:srcCompat="@drawable/ic_baseline_sell_24" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="147dp"
-        android:layout_height="158dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="136dp"
+        android:id="@+id/extdes4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
         android:clickable="true"
         android:onClick="query"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/extdes3"
         app:srcCompat="@drawable/buttonbackground" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="147dp"
-        android:layout_height="158dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="136dp"
+        android:id="@+id/extdes3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
         android:clickable="true"
         android:onClick="aboutus"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/extdes4"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/buttonbackground" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/buydes"
         android:layout_width="67dp"
         android:layout_height="63dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/extdes1"
+        app:layout_constraintEnd_toEndOf="@+id/extdes1"
+        app:layout_constraintStart_toStartOf="@+id/extdes1"
+        app:layout_constraintTop_toTopOf="@+id/extdes1"
         app:srcCompat="@drawable/buy" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="58dp"
-        android:layout_height="55dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView4"
-        app:srcCompat="@drawable/ic_baseline_info_24" />
+        android:id="@+id/abourdes"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_baseline_info_24"
+        app:layout_constraintBottom_toBottomOf="@+id/extdes3"
+        app:layout_constraintStart_toStartOf="@+id/extdes3"
+        app:layout_constraintTop_toTopOf="@+id/extdes3"
+        app:layout_constraintEnd_toEndOf="@+id/extdes3"
+
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="499dp" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="65dp"
+        android:id="@+id/querydes"
+        android:layout_width="62dp"
         android:layout_height="59dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:srcCompat="@drawable/ic_baseline_question_answer_24" />
+        app:srcCompat="@drawable/ic_baseline_question_answer_24"
+        tools:layout_editor_absoluteX="269dp"
+        app:layout_constraintBottom_toBottomOf="@+id/extdes4"
+        app:layout_constraintStart_toStartOf="@+id/extdes4"
+        app:layout_constraintTop_toTopOf="@+id/extdes4"
+        app:layout_constraintEnd_toEndOf="@+id/extdes4"
+        tools:layout_editor_absoluteY="492dp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/buytxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buy"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="@+id/extdes1"
+        app:layout_constraintStart_toStartOf="@+id/extdes1"
+        app:layout_constraintTop_toBottomOf="@+id/extdes1" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/selltxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sell"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintEnd_toEndOf="@+id/extdes2"
+        app:layout_constraintStart_toStartOf="@+id/extdes2"
+        app:layout_constraintTop_toBottomOf="@+id/extdes2" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/qtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Query"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintEnd_toEndOf="@+id/extdes4"
+        app:layout_constraintStart_toStartOf="@+id/extdes4"
+        app:layout_constraintTop_toBottomOf="@+id/extdes4" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/abttxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="About Us"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintEnd_toEndOf="@+id/extdes3"
+        app:layout_constraintStart_toStartOf="@+id/extdes3"
+        app:layout_constraintTop_toBottomOf="@+id/extdes3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
