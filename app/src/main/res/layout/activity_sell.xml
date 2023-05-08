@@ -24,6 +24,7 @@
         android:layout_height="107dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="60dp"
+        android:clickable="true"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
         app:layout_constraintHorizontal_bias="0.341"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,6 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="76dp"
         android:background="#171414"
+        android:clickable="true"
         android:text="Submit Product"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -125,9 +127,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/buyback"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:clickable="true"
         android:onClick="arrowback"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.016"

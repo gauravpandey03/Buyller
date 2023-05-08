@@ -4,10 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.google.android.filament.View;
 
 public class MainActivity extends AppCompatActivity {
 ImageView img1;
@@ -38,18 +37,18 @@ ImageView img4,img5,img6,img7,img8;
     public void buy(View view){
 //        Toast.makeText(this, "buy page clicked", Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(MainActivity.this,buypage.class);
+        Intent intent = new Intent(this,buy.class);
         startActivity(intent);
 
     }
     public void sell(View view){
 
-        Intent intent = new Intent(MainActivity.this,sellpage.class);
+        Intent intent = new Intent(this,sell.class);
         startActivity(intent);
     }
     public void aboutus(View view){
 
-        Intent intent = new Intent(MainActivity.this,aboutpage.class);
+        Intent intent = new Intent(this,about.class);
         startActivity(intent);
     }
     public void query(View view){

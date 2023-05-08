@@ -116,9 +116,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/buyback"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:clickable="true"
         android:onClick="arrowback"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.016"

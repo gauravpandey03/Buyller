@@ -1,20 +1,21 @@
-
 package com.example.buyller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
-public class sellpage extends  AppCompatActivity{
-
+public class about extends AppCompatActivity {
+    ImageView backarow;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sellpage);
+        setContentView(R.layout.activity_about);
+        backarow=findViewById(R.id.buyback);
     }
-
-    private void arrowback(){
+    public void arrowback(View view){
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
