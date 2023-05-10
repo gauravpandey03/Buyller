@@ -3,28 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".cardview"
+    android:layout_height="wrap_content"
+    android:background="#B5B2B2"
     android:orientation="vertical">
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="410dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:background="#D7BBBB"-->
-<!--        android:orientation="vertical"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.264">-->
-
-    <ImageView
-        android:id="@+id/pimage"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="156dp"
-        android:scaleType="fitXY"
-        tools:srcCompat="@drawable/drafter" />
+        android:layout_height="wrap_content"
+
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="7dp"
+
+        >
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+
+     <ImageView
+         android:id="@+id/pimage"
+
+         android:layout_width="370dp"
+         android:layout_height="150dp"
+         android:layout_margin="20sp"
+         android:cropToPadding="false"
+         android:scaleType="fitXY"
+         tools:srcCompat="@drawable/drafter" />
 
         <TextView
             android:id="@+id/pname"
@@ -32,7 +38,7 @@
             android:layout_height="wrap_content"
             android:padding="5sp"
             android:paddingStart="15sp"
-            android:text="NAME"
+            android:text=""
             android:textColor="#000000"
             android:textSize="25sp" />
 
@@ -42,7 +48,7 @@
             android:layout_height="wrap_content"
             android:padding="5sp"
             android:paddingStart="10sp"
-            android:text="product descition dfsdukfhsdfhsdfsdfsdhfsfsdhfusdfsdfsdfhsdfds" />
+            android:text="" />
 
         <TextView
             android:id="@+id/price"
@@ -50,7 +56,7 @@
             android:layout_height="wrap_content"
             android:padding="5sp"
             android:paddingStart="15sp"
-            android:text="price"
+            android:text=""
             android:textSize="18sp" />
 
         <TextView
@@ -62,17 +68,19 @@
             android:textColor="#000000"
             android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/snumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="seller phone number =343535234234" />
+    <TextView
+        android:id="@+id/snumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5sp"
+        android:text="" />
 
-        <TextView
-            android:id="@+id/sdetails"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="seller details include address" />
+    <TextView
+        android:id="@+id/sdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5sp"
+        android:text="" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -109,10 +117,12 @@
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_marginLeft="10sp"
+            android:layout_marginRight="25sp"
+            android:layout_marginBottom="5sp"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24" />
     </LinearLayout>
-
-<!--    </LinearLayout>-->
+ </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
