@@ -8,8 +8,13 @@ public class datamodel {
     private String pprice;
     private String snumber;
     private String sdetails;
+    private  String totalprice;
+    private  String Quantity;
 
-    datamodel(int pimage,String pname,String pdetails,String price,String snumber,String sdetails){
+
+
+
+    datamodel(int pimage, String pname, String pdetails, String price, String snumber, String sdetails){
         this.pimage = pimage;
         this.pname = pname;
         this.pdetails = pdetails;
@@ -17,6 +22,12 @@ public class datamodel {
         this.snumber =  snumber;
         this.sdetails = sdetails;
 
+    }
+
+    datamodel(int pimage,String pname,String price){
+        this.pimage = pimage;
+        this.pname = pname;
+        this.pprice = price;
     }
 
     public int getPimage() {
@@ -52,5 +63,11 @@ public class datamodel {
         return sdetails;
     }
 
+    public String getTotalprice() {
+        return totalprice;
+    }
+    public String getQuantity() {
+        return Quantity;
+    }
 
 }
