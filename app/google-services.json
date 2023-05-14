@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "866012215564",
+    "project_id": "buyller-4715b",
+    "storage_bucket": "buyller-4715b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866012215564:android:a2ff774669721e9f20b129",
+        "android_client_info": {
+          "package_name": "com.example.buyller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866012215564-8p79m9qjbkofi40ql506cs8kr7rb5ocf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8OpCqfXIT7CDIEBukny4QJArMuZMI1ac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866012215564-8p79m9qjbkofi40ql506cs8kr7rb5ocf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
