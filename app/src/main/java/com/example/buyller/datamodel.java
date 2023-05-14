@@ -23,6 +23,13 @@ public class datamodel {
         this.sdetails = sdetails;
 
     }
+    datamodel(String pname,String pdetails,String price,String sdetails,String snumber){
+        this.pname = pname;
+        this.pdetails = pdetails;
+        this.pprice = price;
+        this.sdetails = sdetails;
+        this.snumber = snumber;
+    }
 
     datamodel(int pimage,String pname,String price){
         this.pimage = pimage;
