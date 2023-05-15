@@ -2,6 +2,7 @@ package com.example.buyller;
 
 
 
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,7 +32,7 @@ public class cartadapter extends RecyclerView.Adapter<cartadapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        int pimageadp = userlist.get(position).getPimage();
+        String pimageadp = userlist.get(position).getPimage();
         String pnameadp = userlist.get(position).getPname();
         String priceadp = userlist.get(position).getPrice();
         String qunatity = userlist.get(position).getQuantity();
@@ -62,8 +63,9 @@ public class cartadapter extends RecyclerView.Adapter<cartadapter.ViewHolder> {
 
         }
 
-        public void setData(int pimageadp, String pnameadp, String priceadp) {
-            imageView.setImageResource(pimageadp);
+        public void setData(String pimageadp, String pnameadp, String priceadp) {
+            Uri uri = Uri.parse(pimageadp);
+            imageView.setImageURI(uri);
             pnames.setText(pnameadp);
             price.setText(priceadp);
 

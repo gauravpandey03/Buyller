@@ -1,5 +1,6 @@
 package com.example.buyller;
 
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +30,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        int pimageadp = userlist.get(position).getPimage();
+        String pimageadp = userlist.get(position).getPimage();
         String pnameadp = userlist.get(position).getPname();
         String pdetailsadp = userlist.get(position).getPdetails();
         String priceadp = userlist.get(position).getPrice();
@@ -63,8 +64,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             sdetail = (TextView) itemView.findViewById(R.id.sdetails);
         }
 
-        public void setData(int pimageadp, String pnameadp, String pdetailsadp, String priceadp, String sellerphoneadp, String sdetailsadp) {
-            imageView.setImageResource(pimageadp);
+        public void setData(String pimageadp, String pnameadp, String pdetailsadp, String priceadp, String sellerphoneadp, String sdetailsadp) {
+            Uri myuri = Uri.parse(pimageadp);
+            imageView.setImageURI(myuri);
             pnames.setText(pnameadp);
             pdetail.setText(pdetailsadp);
             prices.setText(priceadp);

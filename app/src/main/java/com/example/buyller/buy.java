@@ -1,14 +1,22 @@
 package com.example.buyller;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,8 +34,12 @@ public class buy extends AppCompatActivity {
 
     RecyclerView recyclerView;
     LinearLayoutManager layoutManager;
-    List<datamodel> userlist;
+    ArrayList<datamodel> userlist;
+
+    //    List<datamodel> userlist;
     Adapter adapter;
+    DatabaseReference myappdata;
+
 
 
     @Override
@@ -35,7 +47,7 @@ public class buy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buy);
         back=findViewById(R.id.buyback);
-        initData();
+//        initData();
         initRecyclerView();
 
 
@@ -43,26 +55,50 @@ public class buy extends AppCompatActivity {
     }
 
     private void initRecyclerView() {
+
         recyclerView = findViewById(R.id.recyclerView);
+        myappdata = FirebaseDatabase.getInstance().getReference("maindata");
+        recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         recmargin marg = new recmargin(100);
         recyclerView.addItemDecoration(marg);
+        userlist = new ArrayList<>();
+        // data base reference
         adapter = new Adapter(userlist);
         recyclerView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
 
 
+        myappdata.addValueEventListener(new ValueEventListener() {
+            @SuppressLint("NotifyDataSetChanged")
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    datamodel tmp = dataSnapshot.getValue(datamodel.class);
+                    userlist.add(tmp);
+                }
+                adapter.notifyDataSetChanged();
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+
+
+        });
 
     }
 
     private void initData() {
-   userlist = new ArrayList<>();
-   userlist.add(new datamodel(productimage[0],productName[0],productdetails[0],price[0],sellerphone[0],sellerdetails[0] ));
-        userlist.add(new datamodel(productimage[1],productName[1],productdetails[1],price[1],sellerphone[1],sellerdetails[1] ));
-        userlist.add(new datamodel(productimage[2],productName[2],productdetails[2],price[2],sellerphone[2],sellerdetails[2] ));
-
+//   userlist = new ArrayList<>();
+//   userlist.add(new datamodel(productimage[0],productName[0],productdetails[0],price[0],sellerphone[0],sellerdetails[0] ));
+//        userlist.add(new datamodel(productimage[1],productName[1],productdetails[1],price[1],sellerphone[1],sellerdetails[1] ));
+//        userlist.add(new datamodel(productimage[2],productName[2],productdetails[2],price[2],sellerphone[2],sellerdetails[2] ));
+//
 
     }
 
