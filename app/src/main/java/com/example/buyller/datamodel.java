@@ -13,7 +13,7 @@ public class datamodel {
 
 
 
-
+    datamodel(){}
     datamodel(String pimage, String pname, String pdetails, String price, String snumber, String sdetails){
         this.pimage = pimage;
         this.pname = pname;
