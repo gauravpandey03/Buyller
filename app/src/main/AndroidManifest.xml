@@ -14,7 +14,11 @@
         android:theme="@style/Theme.Buyller"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".query_page"
+=======
+            android:name=".instagram"
+>>>>>>> 76eaecd (instagram page)
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

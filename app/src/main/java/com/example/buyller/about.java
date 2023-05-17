@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class about extends AppCompatActivity {
+
+
     ImageView backarow;
 
     @Override
@@ -18,6 +20,13 @@ public class about extends AppCompatActivity {
         setContentView(R.layout.activity_about);
         backarow = findViewById(R.id.buyback);
     }
+
+    public void change(View v) {
+        // Start the destination activity or perform other actions
+        Intent intent = new Intent(about.this, instagram.class);
+        startActivity(intent);
+    }
+
 
     public void arrowback(View view) {
         Intent intent = new Intent(this, MainActivity.class);
@@ -38,5 +47,10 @@ public class about extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_SUBJECT, "Registration");
 
         startActivity(Intent.createChooser(intent, "Compose Email"));
+
     }
+
+
+
+
 }
