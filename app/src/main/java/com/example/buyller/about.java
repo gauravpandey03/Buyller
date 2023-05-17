@@ -3,6 +3,8 @@ package com.example.buyller;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -19,4 +21,12 @@ public class about extends AppCompatActivity {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
+
+    public void makeCall(View view) {
+        String phoneNumber = "6387664293"; // Replace with the desired phone number
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:" + phoneNumber));
+        startActivity(intent);
+    }
+
 }
