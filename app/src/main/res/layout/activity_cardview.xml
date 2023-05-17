@@ -110,7 +110,7 @@
                     android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/imageButton4"
+                    android:id="@+id/cartbtn"
                     android:layout_width="20dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="30sp"
