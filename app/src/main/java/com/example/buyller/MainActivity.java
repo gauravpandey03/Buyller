@@ -52,8 +52,8 @@ ImageView img4,img5,img6,img7,img8;
         startActivity(intent);
     }
     public void query(View view){
-        Toast.makeText(this, "this is query class", Toast.LENGTH_SHORT).show();
-
+        Intent intent = new Intent(this,query_page.class);
+        startActivity(intent);
     }
 
 
