@@ -80,6 +80,7 @@
         android:backgroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView13"
+        android:onClick="composeEmail"
         app:srcCompat="@drawable/gmail" />
 
     <ImageView
