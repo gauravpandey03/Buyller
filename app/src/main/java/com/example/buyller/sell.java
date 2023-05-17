@@ -37,13 +37,13 @@ import java.util.Locale;
 public class sell extends AppCompatActivity {
     EditText pname,pdetails,price,sdetails,snumber;
     ImageView backarow,imgpkr;
-    Button datainsert,p;
+    Button datainsert;
     private final int ReQUEST_CODE=1000;
     DatabaseReference buyllerdata;
     StorageReference imgdata;
 
     // other way to bind resources
-    ActivityMainBinding binding;
+//    ActivityMainBinding binding;
     Uri imageurl;
     ProgressDialog progressDialog;
     Uri image;
@@ -122,9 +122,16 @@ public class sell extends AppCompatActivity {
         String sdetailstmp = sdetails.getText().toString();
         String snumbertmp = snumber.getText().toString();
 
+        if(prouductname != "" && prodetails != "" && pricetmp != "" && sdetailstmp != "" && snumbertmp != ""){
+
         datamodel maindata = new datamodel(image.toString(),prouductname,prodetails,pricetmp,sdetailstmp,snumbertmp);
         buyllerdata.push().setValue(maindata);
         Toast.makeText(this, "data inserted to database", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(this, "please fill all the options!!", Toast.LENGTH_SHORT).show();
+        }
+
 
 
     }
@@ -156,6 +163,11 @@ public class sell extends AppCompatActivity {
                     public void onSuccess(Uri uri) {
                         image = uri;
                         insertdata();
+                        pname.setText("");
+                        pdetails.setText("");
+                        price.setText("");
+                        sdetails.setText("");
+                        snumber.setText("");
 //                    buyllerdata.child("image").setValue(uri.toString()).addOnSuccessListener(new OnSuccessListener<Void>() {
 //                        @Override
 //                        public void onSuccess(Void unused) {
