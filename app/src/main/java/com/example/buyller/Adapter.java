@@ -5,6 +5,8 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -48,6 +50,7 @@ public class Adapter extends FirebaseRecyclerAdapter<datamodel,Adapter.myviewhol
         private TextView prices;
         private TextView snumber;
         private TextView sdetail;
+        public ImageButton btn;
 
 
         public myviewholder(@NonNull View itemView) {
@@ -58,6 +61,10 @@ public class Adapter extends FirebaseRecyclerAdapter<datamodel,Adapter.myviewhol
             prices = (TextView) itemView.findViewById(R.id.price);
             snumber = (TextView) itemView.findViewById(R.id.snumber);
             sdetail = (TextView) itemView.findViewById(R.id.sdetails);
+//            btn =  itemView.findViewById(R.id.cartbtn);
+//            btn.setOnClickListener((View.OnClickListener) this);
+
+
         }
     }
 
