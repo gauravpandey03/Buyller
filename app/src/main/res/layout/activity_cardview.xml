@@ -16,97 +16,110 @@
 
         >
 
- <LinearLayout
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:orientation="vertical">
-
-
-     <ImageView
-         android:id="@+id/pimage"
-
-         android:layout_width="370dp"
-         android:layout_height="150dp"
-         android:layout_margin="20sp"
-         android:cropToPadding="false"
-         android:scaleType="fitXY"
-         tools:srcCompat="@drawable/drafter" />
-
-        <TextView
-            android:id="@+id/pname"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5sp"
-            android:paddingStart="15sp"
-            android:text=""
-            android:textColor="#000000"
-            android:textSize="25sp" />
 
-        <TextView
-            android:id="@+id/pdetails"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5sp"
-            android:paddingStart="10sp"
-            android:text="" />
+            android:background="#E6E2E2"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5sp"
-            android:paddingStart="15sp"
-            android:text=""
-            android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5sp"
-            android:text="Seller Details"
-            android:textColor="#000000"
-            android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/pimage"
 
-    <TextView
-        android:id="@+id/snumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="5sp"
-        android:text="" />
+                android:layout_width="370dp"
+                android:layout_height="150dp"
+                android:layout_margin="20sp"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                tools:srcCompat="@drawable/drafter" />
 
-    <TextView
-        android:id="@+id/sdetails"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="5sp"
-        android:text="" />
+            <TextView
+                android:id="@+id/pname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:paddingStart="15sp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="25sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20sp"
-        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/pdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:paddingStart="10sp"
+                android:text=""
+                android:textColor="#161515"
+                />
 
-        <TextView
-            style="@style/TextAppearance.Material3.BodyLarge"
-            android:paddingTop="5sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add to cart"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="20dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="30sp"
-            android:layout_marginRight="50sp"
-            android:layout_marginBottom="5sp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24" />
-    </LinearLayout>
- </LinearLayout>
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:paddingStart="15sp"
+                android:text=""
+                android:textColor="#161515"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:text="Seller Details"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/snumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5sp"
+                android:textColor="#161515"
+
+                android:text="" />
+
+            <TextView
+                android:id="@+id/sdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5sp"
+                android:textColor="#161515"
+
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.Material3.BodyLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5sp"
+                    android:textColor="#161515"
+
+                    android:text="Add to cart"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24" />
+            </LinearLayout>
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>
