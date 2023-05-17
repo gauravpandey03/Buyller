@@ -2,6 +2,8 @@
 
 Buyller is an Android app developed using Android Studio. It utilizes Firebase Realtime Database to create a platform where users can sell products. The app is designed to be responsive and user-friendly.
 
+## Screenshots
+
 ## Features
 
 - Sell products: Users can add their products to the app, which will be stored in the Firebase Realtime Database.
@@ -13,7 +15,7 @@ Buyller is an Android app developed using Android Studio. It utilizes Firebase R
 
 To run the Buyller app on your local machine, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/buyller-app.git`
+1. Clone the repository: `git clone https://github.com/gauravpandey03/Buyller.git`
 2. Open the project in Android Studio.
 3. Set up Firebase: Create a Firebase project and configure the app to use the Firebase Realtime Database. You can find detailed instructions in the [Firebase documentation](https://firebase.google.com/docs/android/setup).
 4. Build and run the app on an emulator or physical device.
@@ -44,6 +46,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 If you have any questions or suggestions, feel free to contact the project maintainer:
 
-- Email: your-email@example.com
-- GitHub: [Your GitHub Profile](https://github.com/your-username)
+- Email: yuvrajbhati00980@gmail.com
+- GitHub: [Your GitHub Profile](https://github.com/Nothing00980)
 
