@@ -70,7 +70,13 @@ public class sell extends AppCompatActivity {
         datainsert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             uploadimage();
+                if(pname.getText().toString().equals("") && pdetails.getText().toString().equals("") && price.getText().toString().equals("") && sdetails.getText().toString().equals("") && snumber.getText().toString().equals("") ) {
+
+                    Toast.makeText(sell.this, "please fill all the fields", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    uploadimage();
+                }
 //             insertdata();
 
             }
@@ -112,6 +118,7 @@ public class sell extends AppCompatActivity {
         if(requestCode ==100 && data !=null && data.getData() != null){
             imageurl = data.getData();
             imgpkr.setImageURI(imageurl);
+//            imgpkr.setImageResource(R.drawable.ic_baseline_phone_24);
         }
     }
 
@@ -122,15 +129,13 @@ public class sell extends AppCompatActivity {
         String sdetailstmp = sdetails.getText().toString();
         String snumbertmp = snumber.getText().toString();
 
-        if(prouductname != "" && prodetails != "" && pricetmp != "" && sdetailstmp != "" && snumbertmp != ""){
+//        if(prouductname != "" && prodetails != "" && pricetmp != "" && sdetailstmp != "" && snumbertmp != ""){
 
         datamodel maindata = new datamodel(image.toString(),prouductname,prodetails,pricetmp,sdetailstmp,snumbertmp);
         buyllerdata.push().setValue(maindata);
         Toast.makeText(this, "data inserted to database", Toast.LENGTH_SHORT).show();
-        }
-        else{
-            Toast.makeText(this, "please fill all the options!!", Toast.LENGTH_SHORT).show();
-        }
+
+
 
 
 
@@ -139,8 +144,15 @@ public class sell extends AppCompatActivity {
 
         // first we will store the image in storage and then store a copy of that in the
         //real time database.
+        if(imgpkr.getDrawable().getConstantState() == getResources().getDrawable(R.drawable.ic_baseline_add_a_photo_24).getConstantState()) {
+            Toast.makeText(this, "please add a image", Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
 
-        progressDialog = new ProgressDialog(this);
+
+
+            progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Uploading file...");
         progressDialog.show();
 
@@ -187,6 +199,11 @@ public class sell extends AppCompatActivity {
 
             }
         });
+
+
+
+
+        }
 
 
     }
