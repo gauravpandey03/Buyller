@@ -52,8 +52,12 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions or suggestions, feel free to contact the project maintainer:
+If you have any questions or suggestions, feel free to contact the project maintainers:
 
 - Email: yuvrajbhati00980@gmail.com
 - GitHub: [Your GitHub Profile](https://github.com/Nothing00980)
+- - Email: manoharyadav7974@gmail.com
+- itHub: [Your GitHub Profile](https://github.com/Manohar123261)
+Email: gauravpandey10082003@gmail.com
+- GitHub: [Your GitHub Profile](https://github.com/gauravpandey03)
 
