@@ -5,7 +5,10 @@ Buyller is an Android app developed using Android Studio. It utilizes Firebase R
 ## Screenshots
 
 
-Uploading WhatsApp Video 2023-05-18 at 12.38.54 AM.mp4…
+
+https://github.com/gauravpandey03/Buyller/assets/100027640/a33281c5-22ca-4101-ad5d-96c02125a0b1
+
+
 
 
 
